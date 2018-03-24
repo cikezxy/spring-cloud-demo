@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cikezxy/springcloud-config.git
+          search-paths:
+          username: cikezxy
+          password: aptx4869
+
+server:
+  port: 7001
