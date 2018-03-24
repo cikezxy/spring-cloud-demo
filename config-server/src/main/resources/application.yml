@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/cikezxy/springcloud-config.git
-          search-paths:
+          search-paths: '{application}'
           username: cikezxy
           password: aptx4869
 
