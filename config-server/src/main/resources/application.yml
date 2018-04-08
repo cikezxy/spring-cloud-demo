@@ -12,3 +12,11 @@ spring:
 
 server:
   port: 7001
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: info, health
+
+

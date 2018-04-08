@@ -8,4 +8,16 @@ spring:
       uri: http://localhost:7001
 server:
   port: 7002
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: health, info, mappings, httptrace, refresh
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+
 
