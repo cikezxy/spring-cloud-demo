@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: registration-server
+server:
+  port: 9001
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:9000/eureka/,http://peer2:9001/eureka/
+
+
