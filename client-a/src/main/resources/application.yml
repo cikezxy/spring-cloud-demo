@@ -1,13 +1,10 @@
+server:
+  port: 8000
+
 spring:
   application:
     name: clientA
-  cloud:
-    config:
-      profile: dev
-      label: master
-      uri: http://localhost:7001
-server:
-  port: 7002
+
 management:
   endpoints:
     enabled-by-default: true
@@ -18,6 +15,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9000/eureka/
-
-
-
